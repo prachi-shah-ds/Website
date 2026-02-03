@@ -6,27 +6,28 @@ export const getAsset = (path: string) => {
 
 const siteConfig = {
   personal: {
-    name: 'Put your name inside the quote',Prachi Shah
-    title: 'Your Title | Your Role',
-    image: getAsset('images/profile.png'), // Customize or replace with your profile image
+    name: 'Prachi Shah',
+    title: 'Economics & Data Science Student | Christ University',
+    image: getAsset('"C:\Users\Prachi\Downloads\1764661906830 (1)_11zon.png"'),
     description:
-      'Write a short bio here describing your background and focus. Keep it to 2–4 sentences.\n' +
+      'B.Sc. Economics with Data Science student at Christ (Deemed to be University), BRC Campus. ' +
+      'Passionate about data analysis, critical thinking, and turning numbers into meaningful insights.\n' +
       '\n' +
-      'Mention your institution or company, areas of interest, and what you teach or build.\n' +
+      'Actively involved in club activities, debating, and leadership roles that sharpen both analytical and communication skills.\n' +
       '\n' +
-      'Summarize your education or certifications briefly and highlight your practical work.\n' +
+      'Completed the Young Changemakers Programme at IIM Ranchi and hold a creative writing certification.\n' +
       '\n' +
-      'Optional: Add notable books, workshops, or training you deliver.',
-    tagline: 'Add a concise personal tagline here.',
-    location: 'Your City, Country',
+      'Proud youngest female black belt in the district — discipline and resilience carry over into everything I do.',
+    tagline: 'Turning data into decisions, one insight at a time.',
+    location: 'India',
   },
 
   seo: {
-    title: 'Your Name – Your Title',
-    description: "Portfolio website showcasing your education, research, projects, and experience.",
+    title: 'Prachi Shah – Economics & Data Science Student',
+    description: 'Portfolio website showcasing education, projects, experience, and skills of Prachi Shah.',
   },
 
-  animatedText: ['Your Role', 'Your Focus', 'Your Interest', 'Builder'],
+  animatedText: ['Data Analyst', 'Economics Student', 'Content Writer', 'Problem Solver'],
 
   navigation: [
     { name: 'Home', url: '/' },
@@ -39,101 +40,119 @@ const siteConfig = {
     { name: 'Contact', url: '/contact' },
   ],
 
-  // Static blog entries. Use getAsset so the URL respects NEXT_PUBLIC_BASE_PATH / next.config.basePath
-  // Add more entries here as you add more static HTML blog files under public/static_page/
   blogs: [
     {
       title: 'Your Blog Title',
-      url: getAsset('static_page/project_management_blog.html'), // Replace with your static HTML page
+      url: getAsset('static_page/project_management_blog.html'),
     },
   ],
-
 
   education: [
     {
-      institution: 'Your Institution',
-      degree: 'Your Degree',
-      year: 'YYYY–YYYY',
+      institution: 'Christ (Deemed to be University), BRC Campus',
+      degree: 'B.Sc. Economics with Data Science',
+      year: '2024–Present',
       image: getAsset('images/education/placeholder.png'),
-      description: ['Brief description of your focus or thesis'],
-    },
-    {
-      institution: 'Another Institution',
-      degree: 'Another Degree or Certificate',
-      year: 'YYYY–YYYY',
-      image: getAsset('images/education/placeholder.png'),
-      description: ['Key topics or skills learned'],
-    },
-  ],
-
-// ✅ Unified MOOC + Certifications Section
-  certifications: [
-    {
-      title: 'Your Certificate or Specialization',
-      specialization: true,
-      file: getAsset('images/education/Certifications/download.svg'),
-      certificates: [
-        { name: 'Course 1', file: getAsset('images/education/Certifications/download.svg') },
-        { name: 'Course 2', file: getAsset('images/education/Certifications/download.svg') },
+      description: [
+        'First Year student with a GPA of 3.72 / 4.0 (Semester 1).',
+        'Coursework includes advanced Excel, introductory Python, and foundational data workflows.',
       ],
     },
     {
-      title: 'Another Certificate',
+      institution: 'Eklavya Global School',
+      degree: 'Secondary Education',
+      year: 'Up to 2024',
+      image: getAsset('images/education/placeholder.png'),
+      description: [
+        'Served as Head Girl — managed student responsibilities and organised large-scale events.',
+      ],
+    },
+  ],
+
+  certifications: [
+    {
+      title: 'Creative Writing Certification',
+      file: getAsset('images/education/Certifications/download.svg'),
+    },
+    {
+      title: 'Young Changemakers Programme – IIM Ranchi',
       file: getAsset('images/education/Certifications/download.svg'),
     },
   ],
 
-
-
-  // ✅ Experience section updated
   experience: [
     {
-      title: 'Your Role',
+      title: 'Young Changemakers Programme',
       cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Your Organization',
-      time: '(MMM YYYY – Present)',
-      desp: ['Brief responsibility 1', 'Brief responsibility 2'],
+      place: 'IIM Ranchi',
+      time: '(Dec 2024)',
+      desp: [
+        'Solved real-world problems collaboratively within strict timelines.',
+        'Improved critical thinking and enhanced collaboration and leadership skills.',
+      ],
     },
     {
-      title: 'Previous Role',
+      title: 'Literary Committee Member',
       cardImage: getAsset('images/experience/placeholder.png'),
-      place: 'Previous Organization',
-      time: '(MMM YYYY – MMM YYYY)',
-      desp: ['Key contribution 1', 'Key contribution 2'],
+      place: 'Student Welfare Office – Christ University',
+      time: '(2024–Present)',
+      desp: [
+        'Produced written material under tight deadlines across formal and creative formats.',
+        'Worked within a structured student-administration setting.',
+      ],
+    },
+    {
+      title: 'Economics & Data Science Club Member',
+      cardImage: getAsset('images/experience/placeholder.png'),
+      place: 'Christ University',
+      time: '(2024–Present)',
+      desp: [
+        'Gained foundational Python skills and learned introductory data workflows.',
+      ],
+    },
+    {
+      title: 'MUN Delegate',
+      cardImage: getAsset('images/experience/placeholder.png'),
+      place: 'External Debating Society',
+      time: '(2024–Present)',
+      desp: [
+        'Developed rapid research capabilities and delivered structured, professional arguments.',
+        'Explored international policy issues through Model United Nations simulations.',
+      ],
+    },
+    {
+      title: 'Head Girl',
+      cardImage: getAsset('images/experience/placeholder.png'),
+      place: 'Eklavya Global School',
+      time: '(2023–2024)',
+      desp: [
+        'Managed student responsibilities and handled high-pressure situations.',
+        'Single-handedly organised an event for more than 100 teachers, strengthening organisational skills.',
+      ],
     },
   ],
 
-
-  // ✅ Projects section updated
   projects: [
     {
-      title: 'Project Title 1',
+      title: 'Interactive Excel Dashboard',
       cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Short description of your project and what it does...',
-      Githublink: 'https://github.com/your-username/your-project',
-    },
-    {
-      title: 'Project Title 2',
-      cardImage: getAsset('images/project/placeholder.png'),
-      description: 'Another project summary...',
-      Githublink: 'https://github.com/your-username/another-project',
+      description:
+        'Built interactive dashboards using advanced Excel functions for coursework and Economics & Data Science Club tasks. Focused on visual data storytelling and real-time analysis.',
+      Githublink: 'https://github.com/your-username/your-project', // Replace with your actual repo link
     },
   ],
-
 
   research: [
     {
       title: 'Your Paper or Research Title',
-      authors: 'Your Name, Collaborator Name',
+      authors: 'Prachi Shah',
       conferences: 'Conference or Journal, Publisher',
       researchYr: 2024,
-  image: getAsset('images/research/placeholder.png'),
+      image: getAsset('images/research/placeholder.png'),
       citation: {
-        vancouver:
-          'Author A, Author B. Title of the work. Venue, Year. DOI/URL.',
+        vancouver: 'Shah P. Title of the work. Venue, Year. DOI/URL.',
       },
-      abstract:
-        'One or two sentences summarizing the contribution...',
+      abstract: 'One or two sentences summarizing the contribution...',
       link: 'https://example.com/your-publication',
     },
   ],
@@ -148,11 +167,11 @@ const siteConfig = {
   ],
 
   contact: {
-    email: 'your.email@example.com',
-    linkedin: 'https://www.linkedin.com/in/your-linkedin/',
-    github: 'https://github.com/your-username',
-    googleScholar: 'https://scholar.google.com/citations?user=YOURID',
-    orcid: 'https://orcid.org/0000-0000-0000-0000',
+    email: 'findprachishah@gmail.com',
+    linkedin: 'https://www.linkedin.com/in/prachi-shah-110062377/',   // Replace with your LinkedIn URL
+    github: 'https://github.com/prachi-shah-ds',                // Replace with your GitHub URL
+    googleScholar: 'https://scholar.google.com/citations?user=YOURID', // Replace if applicable
+    orcid: 'https://orcid.org/0000-0000-0000-0000',            // Replace if applicable
   },
 };
 
